@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block content %}
+  <form method="post" class="container-sm mt-5">
+    {% if form.errors %}
+        {{ form.errors }}
+    {% endif %}
+    {{form.hidden_tag()}}
+    <div class="mb-3">
+      {{form.breathing.label(class="form-label")}}{{form.breathing(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.fever.label(class="form-label")}}{{form.fever(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.dry_cough.label(class="form-label")}}{{form.dry_cough(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.sore_throat.label(class="form-label")}}{{form.sore_throat(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.running.label(class="form-label")}}{{form.running(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.asthma.label(class="form-label")}}{{form.asthma(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.lung_disease.label(class="form-label")}}{{form.lung_disease(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.headaches.label(class="form-label")}}{{form.headaches(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.heart_disease.label(class="form-label")}}{{form.heart_disease(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.diabetes.label(class="form-label")}}{{form.diabetes(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.hyper_tension.label(class="form-label")}}{{form.hyper_tension(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.fatigue.label(class="form-label")}}{{form.fatigue(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.gastrointestinal.label(class="form-label")}}{{form.gastrointestinal(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.abroad.label(class="form-label")}}{{form.abroad(class="form-check form-control")}}
+    </div>
+
+    <div class="mb-3">
+        {{form.exposed.label(class="form-label")}}{{form.exposed(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+        {{form.gathering.label(class="form-label")}}{{form.gathering(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+        {{form.public.label(class="form-label")}}{{form.public(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+        {{form.family.label(class="form-label")}}{{form.family(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+        {{form.mask.label(class="form-label")}}{{form.mask(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+        {{form.sanitization.label(class="form-label")}}{{form.sanitization(class="form-check form-control")}}
+    </div>
+    <div class="mb-3">
+      {{form.submit(class="btn btn-primary")}}
+    </div>
+  </form>
+{% endblock %}

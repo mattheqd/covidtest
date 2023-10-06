@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+  <div class="container-med text-sm-center p-5">
+    <h1 class="display-2">Result:</h1>
+    {% if prediction == 1 %}
+    <p class="lead">You are at risk of covid.</p>
+    {% else %}
+    <p class="lead">You are not at risk of covid.</p>
+    {% endif %}
+  </div>
+{% endblock %}
